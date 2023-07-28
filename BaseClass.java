@@ -1,4 +1,4 @@
-package com.airtel.qsp.genericutility;
+package com.trello.qsp.genericutility;
 
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
@@ -9,9 +9,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import com.airtel.qsp.pomrepository.LogoutTrello;
-import com.airtel.qsp.pomrepository.TrelloHomePage;
-import com.airtel.qsp.pomrepository.TrelloLoginPage;
+import com.trello.qsp.pomrepository.LogoutTrello;
+import com.trello.qsp.pomrepository.TrelloHomePage;
+import com.trello.qsp.pomrepository.TrelloLoginPage;
 
 public class BaseClass
 {
