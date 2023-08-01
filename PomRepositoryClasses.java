@@ -59,7 +59,7 @@ public class TrelloWelcomePage
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(className = "szBTSFrvPTLGHM")
+	@FindBy(xpath = "//p[text()='Create']")
 	private WebElement createOption;
 
 	public WebElement getCreateOption() 
@@ -133,7 +133,7 @@ public class DeleteTrelloBoard
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "/HTML/BODY/DIV[1]/DIV[2]/DIV[1]/DIV/MAIN/DIV/DIV[2]/DIV[2]/DIV/DIV[1]/DIV[1]/DIV/DIV/SPAN[2]/BUTTON[2]/SPAN/SPAN")
+	@FindBy(xpath = "//button[@aria-label='Show menu' and @type='button']")
 	private WebElement menuOption;
 	public WebElement getMenuOption() 
 	{
@@ -203,7 +203,7 @@ public class LogoutTrello
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//BUTTON[@class='Ox5dOT7lU3Hn8B js-open-header-member-menu ajH6IO6EalOZPh bxgKMAm3lq5BpA SEj5vUdI3VvxDc']/DIV/SPAN[@title='Shivappa E (shivappae)']")
+	@FindBy(css = "span[title='Shivappa E (shivappae)']")
 	private WebElement profileIcon;
 
 	public WebElement getProfileIcon() 
